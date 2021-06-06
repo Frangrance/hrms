@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kk.hrms.business.abstracts.EmployerService;
+import kk.hrms.core.utilities.DataResult;
 import kk.hrms.entities.concretes.Employer;
 
 @RestController
@@ -15,15 +16,15 @@ import kk.hrms.entities.concretes.Employer;
 public class EmployersController {
 	
 	private EmployerService employerService;
-	
+
 	@Autowired
 	public EmployersController(EmployerService employerService) {
 		super();
 		this.employerService = employerService;
 	}
-
+	
 	@GetMapping("/getall")
-	public List<Employer> getAll(){
+	public DataResult<List<Employer>> getAll(){
 		return this.employerService.getAll();
 	}
 }
