@@ -1,9 +1,10 @@
 package kk.hrms.business.abstracts;
 
-import java.util.List;
-
-import kk.hrms.entities.concretes.User;
+import kk.hrms.core.entities.concretes.User;
+import kk.hrms.core.utilities.DataResult;
 
 public interface UserService {
-	List<User> getAll();
+	
+	DataResult<User> checkEmail(String email);
+	
 }

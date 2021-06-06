@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.Query;
 
 import kk.hrms.entities.dto.AdvertisementDto;
 
-public interface JobAdvertisement extends JpaRepository<JobAdvertisement,Integer> {
+public interface JobAdvertisementDao extends JpaRepository<JobAdvertisementDao,Integer> {
 
 	@Query("From JobAdvertisement where isActive=true ")
-	List<JobAdvertisement> getByIsActive();
+	List<JobAdvertisementDao> getByIsActive();
 	
 	@Query("Select new Senpai.hrms.entities.dto.AdvertisementDto(j.id, e.companyName,j.name,j.openPositions,j.appDate,j.appDeadline,j.isActive) From Employer e Inner Join e.jobAdvertisement j ")
 	List<AdvertisementDto> getByAdvertisementDetail();

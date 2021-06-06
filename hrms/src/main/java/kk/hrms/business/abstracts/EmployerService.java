@@ -2,8 +2,13 @@ package kk.hrms.business.abstracts;
 
 import java.util.List;
 
+import kk.hrms.core.utilities.DataResult;
+import kk.hrms.core.utilities.Result;
 import kk.hrms.entities.concretes.Employer;
 
 public interface EmployerService {
-	List<Employer> getAll();
+	
+	Result add(Employer employer);
+	
+	DataResult<List<Employer>> getAll();
 }
