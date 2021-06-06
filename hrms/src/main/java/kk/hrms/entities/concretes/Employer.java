@@ -20,7 +20,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="employers")
 @PrimaryKeyJoinColumn(name = "user_id")
-
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler","jobAdvertisement"})
