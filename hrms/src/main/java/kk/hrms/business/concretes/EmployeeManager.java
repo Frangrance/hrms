@@ -31,7 +31,7 @@ public class EmployeeManager implements EmployeeService {
 
 	@Override
 	public Result add(Employee employee) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 }

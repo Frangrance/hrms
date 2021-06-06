@@ -16,31 +16,29 @@ import kk.hrms.entities.concretes.Ability;
 @Service
 public class AbilityManager implements AbilityService {
 
-	private AbilityDao abilitydao;
+	private AbilityDao abilityDao;
 
 	@Autowired
 	public AbilityManager(AbilityDao abilitydao) {
 		super();
-		this.abilitydao = abilitydao;
+		this.abilityDao = abilitydao;
 	}
 
 	@Override
 	public Result add(Ability ability) {
-		this.abilitydao.save(ability);
+		this.abilityDao.save(ability);
 		return new SuccessResult("ability added");
 	}
 
 	@Override
 	public DataResult<List<Ability>> getAll() {
-		// TODO Auto-generated method stub
-		return new SuccessDataResult<List<Ability>>(this.abilitydao.findAll(),"abilities listed");
+		
+		return new SuccessDataResult<List<Ability>>(this.abilityDao.findAll(),"abilities listed");
 	}
 
-	
-
 	@Override
-	public DataResult<List<Ability>> getByJobhunter(int JobHunterId) {
+	public DataResult<List<Ability>> getByJobhunter(int jobHunterId) {
 		
-		return new SuccessDataResult<List<Ability>>(this.abilitydao.getByJobhunter_userId(JobHunterId));
+		return new SuccessDataResult<List<Ability>>(this.abilityDao.getByJobhunter_userId(jobHunterId));
 	}
 }

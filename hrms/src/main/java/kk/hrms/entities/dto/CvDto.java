@@ -21,7 +21,7 @@ public class CvDto {
 	
 	private JobHunter jobhunter;
 	private Image image;
-	private List<CoverLetter> coverletters;
+	private List<CoverLetter> coverLetters;
 	private List<Education> educations;
 	private List<Experience> experiences;
 	private List<Ability>	abilities;

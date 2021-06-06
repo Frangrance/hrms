@@ -4,9 +4,9 @@ import kk.hrms.core.utilities.results.Result;
 
 public class BusinessRule {
 	
-	public static Result Run(Result... results)
+	public static Result Run(Result... logics)
     {
-		for (Result result : results) {
+		for (Result result : logics) {
 			 if (!result.isSuccess())
             {
                 return result;
