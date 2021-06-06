@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import kk.hrms.core.entities.concretes.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
 import lombok.NoArgsConstructor;
 
 @Data
@@ -26,6 +25,7 @@ import lombok.NoArgsConstructor;
 @PrimaryKeyJoinColumn(name = "user_id")
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class JobHunter extends User {
 	
 	@NotNull
