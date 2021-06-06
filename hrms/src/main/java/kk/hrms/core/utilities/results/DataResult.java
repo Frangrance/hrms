@@ -1,4 +1,4 @@
-package kk.hrms.core.utilities;
+package kk.hrms.core.utilities.results;
 
 public class DataResult<T> extends Result {
 	

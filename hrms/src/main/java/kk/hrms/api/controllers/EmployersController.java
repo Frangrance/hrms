@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kk.hrms.business.abstracts.EmployerService;
-import kk.hrms.core.utilities.DataResult;
+import kk.hrms.core.utilities.results.DataResult;
 import kk.hrms.entities.concretes.Employer;
 
 @RestController

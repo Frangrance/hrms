@@ -1,6 +1,6 @@
 package kk.hrms.business.abstracts;
 
-import kk.hrms.core.utilities.Result;
+import kk.hrms.core.utilities.results.Result;
 
 public interface VerifyCodeService {
 	

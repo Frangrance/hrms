@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kk.hrms.business.abstracts.EmployerService;
-import kk.hrms.core.utilities.DataResult;
-import kk.hrms.core.utilities.Result;
-import kk.hrms.core.utilities.SuccessDataResult;
-import kk.hrms.core.utilities.SuccessResult;
+import kk.hrms.core.utilities.results.DataResult;
+import kk.hrms.core.utilities.results.Result;
+import kk.hrms.core.utilities.results.SuccessDataResult;
+import kk.hrms.core.utilities.results.SuccessResult;
 import kk.hrms.dataAccess.abstracts.EmployerDao;
 import kk.hrms.entities.concretes.Employer;
 

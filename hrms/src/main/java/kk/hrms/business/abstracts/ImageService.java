@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import kk.hrms.core.utilities.DataResult;
-import kk.hrms.core.utilities.Result;
+import kk.hrms.core.utilities.results.DataResult;
+import kk.hrms.core.utilities.results.Result;
 import kk.hrms.entities.concretes.Image;
 
 public interface ImageService {
