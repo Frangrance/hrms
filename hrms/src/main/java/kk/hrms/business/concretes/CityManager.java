@@ -24,7 +24,7 @@ public class CityManager implements CityService {
 
 	@Override
 	public DataResult<List<City>> getAll() {
-		// TODO Auto-generated method stub
+		
 		return new SuccessDataResult<List<City>>(this.cityDao.findAll(),"All City Listed!");
 	}
 }

@@ -32,13 +32,13 @@ public class EducationManager implements EducationService{
 
 	@Override
 	public DataResult<List<Education>> getAll() {
-		// TODO Auto-generated method stub
+		
 		return new SuccessDataResult<List<Education>>(this.educationDao.findAll(),"educations listed");
 	}
 
 	@Override
 	public DataResult<List<Education>> getByJobhunterOrderByGraduationDateDesc(int jobHunterId) {
-		// TODO Auto-generated method stub
+		
 		return new SuccessDataResult<List<Education>>(this.educationDao.getByJobhunter_userIdOrderByGraduationDateDesc(jobHunterId));
 	}
 

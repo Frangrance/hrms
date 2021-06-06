@@ -3,6 +3,7 @@ package kk.hrms.core.utilities.uploads;
 import java.io.IOException;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.cloudinary.Cloudinary;
@@ -12,6 +13,7 @@ import kk.hrms.core.utilities.results.DataResult;
 import kk.hrms.core.utilities.results.ErrorDataResult;
 import kk.hrms.core.utilities.results.SuccessDataResult;
 
+@Service
 public class ImageHelper implements ImageUploadService {
 
 	@Override

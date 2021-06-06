@@ -32,13 +32,13 @@ public class ExperienceManager implements ExperienceService {
 
 	@Override
 	public DataResult<List<Experience>> getAll() {
-		// TODO Auto-generated method stub
+		
 		return new SuccessDataResult<List<Experience>>(this.experienceDao.findAll(),"exps listed");
 	}
 
 	@Override
 	public DataResult<List<Experience>> getByJobhunterOrderByLeaveDateDesc(int jobHunterId) {
-		// TODO Auto-generated method stub
+		
 		return new SuccessDataResult<List<Experience>>(this.experienceDao.getByJobhunter_userIdOrderByLeaveDateDesc(jobHunterId));
 	}
 

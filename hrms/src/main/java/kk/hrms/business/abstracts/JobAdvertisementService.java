@@ -14,5 +14,6 @@ public interface JobAdvertisementService {
 	DataResult<List<AdvertisementDto>> getAllByActive();
 	DataResult<List<JobAdvertisement>> getAllSortedByDate();
 	Result add(JobAdvertisement advertisement);
+	Result update(JobAdvertisement advertisement);
 	
 }

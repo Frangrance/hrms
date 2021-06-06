@@ -1,5 +1,8 @@
 package kk.hrms.core.utilities.adapters;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MernisAdapter implements MernisService {
 
 	@Override

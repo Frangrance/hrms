@@ -51,8 +51,14 @@ public class JobAdvertisementManager implements JobAdvertisementService {
 
 	@Override
 	public DataResult<List<AdvertisementDto>> getAllDetail() {
-		// TODO Auto-generated method stub
+	
 		return new SuccessDataResult<List<AdvertisementDto>>(this.advertisement.getByAdvertisementDetail());
+	}
+
+	@Override
+	public Result update(JobAdvertisement advertisement) {
+		
+		return null;
 	}
 
 }
